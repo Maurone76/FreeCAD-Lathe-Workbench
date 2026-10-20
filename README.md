@@ -4,6 +4,9 @@
 ![FreeCAD](https://img.shields.io/badge/FreeCAD-%3E%3D%200.21-blue)
 ![License: LGPL v2.0](https://img.shields.io/badge/License-LGPL%20v2.0-blue.svg)
 
+<img width="2539" height="1253" alt="image" src="https://github.com/user-attachments/assets/b9e57f93-c0b9-4447-8464-adc9594d4cb3" />
+
+
 The **Lathe Workbench** is a specialized external CAM environment for [FreeCAD](https://www.freecad.org) built to handle complex CNC turning workflows. Unlike standard milling workbenches, this workbench is tailored specifically for lathe operations—including roughing, finishing, grooving, parting, drilling, threading, turret indexing, and custom G-code post-processing.
 
 ---

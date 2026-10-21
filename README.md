@@ -8,7 +8,7 @@
 ![Main Interface](docs/screenshot.png)
 *Figure 1: Lathe Workbench main interface and toolpaths.*
 
-https://github.com/Maurone76/FreeCAD-Lathe-Workbench/blob/main/docs/simulation.mp4
+👉 **[Click here to download and watch the simulation video (Simulation.mp4)](docs/Simulation.mp4)**
 *Figure 2: Real-time 3D simulation of turning operations.*
 
 The **Lathe Workbench** is a specialized external CAM environment for [FreeCAD](https://www.freecad.org) built to handle complex CNC turning workflows. Unlike standard milling workbenches, this workbench is tailored specifically for lathe operations—including roughing, finishing, grooving, parting, drilling, threading, turret indexing, and custom G-code post-processing.
@@ -61,17 +61,33 @@ The **Lathe Workbench** is a specialized external CAM environment for [FreeCAD](
 
 The workbench uses a clean, modular structure following FreeCAD Addon standards:
 
-```text
-LatheCAM/
-├── docs/                    # Documentation assets (screenshots and Simulation.mp4)
-├── icons/                   # SVG toolbar icons
-├── MachineLibrary/          # Machine definition profiles
-├── StockLibrary/            # Stock material profiles
-├── ToolLibrary/             # Tool and insert databases
-├── TurretLibrary/           # Turret configuration files
-├── translations/            # I18n localization files (EN, IT, ES, DE)
-├── post_profiles_ecam.json  # G-code post-processor configurations
-├── InitGui.py               # Workbench initialization for FreeCAD
-├── Lathe*.py                # Main operation modules
-├── README.md                # This documentation
-└── LICENSE                  # LGPL License file
+    LatheCAM/
+    ├── docs/                    # Documentation assets (screenshots and Simulation.mp4)
+    ├── icons/                   # SVG toolbar icons
+    ├── MachineLibrary/          # Machine definition profiles
+    ├── StockLibrary/            # Stock material profiles
+    ├── ToolLibrary/             # Tool and insert databases
+    ├── TurretLibrary/           # Turret configuration files
+    ├── translations/            # I18n localization files (EN, IT, ES, DE)
+    ├── post_profiles_ecam.json  # G-code post-processor configurations
+    ├── InitGui.py               # Workbench initialization for FreeCAD
+    ├── Lathe*.py                # Main operation modules
+    ├── README.md                # This documentation
+    └── LICENSE                  # LGPL License file
+
+---
+
+## Feedback and Contributions
+
+This is a brand new software project in active development. If you encounter bugs, have suggestions, or want to propose improvements, please do not hesitate to share them! 
+
+To keep everything organized and avoid direct private messages, please use the following official channels:
+- Open an **[Issue](https://github.com/tuo-username/nome-tuo-repo/issues)** on GitHub for bug reports or specific errors.
+- Start or join a conversation in the **[GitHub Discussions](https://github.com/tuo-username/nome-tuo-repo/discussions)** section for ideas and general feedback.
+- Join the community discussion on the official **[FreeCAD Forum](https://forum.freecad.org/)**.
+
+---
+
+## License
+
+This project is open-source and released under the **GNU Lesser General Public License v2.0 or later (LGPL-2.0-or-later)**. See the `LICENSE` file for details. Textual documentation is provided under CC-BY-3.0.

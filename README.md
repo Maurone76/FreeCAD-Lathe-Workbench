@@ -1,121 +1,77 @@
-LatheCAM Workbench for FreeCAD
+# Lathe Workbench for FreeCAD
 
+![Status](https://img.shields.io/badge/status-in%20development-orange)
+![FreeCAD](https://img.shields.io/badge/FreeCAD-%3E%3D%200.21-blue)
+![License: LGPL v2.0](https://img.shields.io/badge/License-LGPL%20v2.0-blue.svg)
 
-(Placeholder: Insert a nice, wide screenshot of FreeCAD with the LatheCAM workbench open, showing a complex turned part and the toolpaths.)
+## Screenshots & Workflow
+<!-- Replace the placeholder paths below with your actual image paths once uploaded -->
+![Main Interface](docs/images/placeholder_main_interface.png)
+*Figure 1: Lathe Workbench main interface and toolpaths.*
 
-LatheCAM is a powerful and dedicated FreeCAD workbench designed to streamline CNC lathe operations. It provides a comprehensive suite of tools for turning, facing, drilling, grooving, and threading, complete with tool management, stock definition, and post-processing capabilities.
+![Simulation](docs/images/placeholder_simulation.png)
+*Figure 2: Real-time 3D simulation of turning operations.*
 
-📸 Screenshots & Workflow
+The **Lathe Workbench** is a specialized external CAM environment for [FreeCAD](https://www.freecad.org) built to handle complex CNC turning workflows. Unlike standard milling workbenches, this workbench is tailored specifically for lathe operations—including roughing, finishing, grooving, parting, drilling, threading, turret indexing, and custom G-code post-processing.
 
-(Placeholder: Add 2-3 screenshots here showing the Tool Manager, the Setup Dialog, and the 3D Simulation in action.)
+---
 
-Tool Manager Interface:
+## Features
 
+- **Turning Operations**: Dedicated tools for roughing, finishing, grooving, parting, drilling, and threading.
+- **Tool & Turret Management**: Comprehensive interface to define cutting tools, inserts, holders, and turret stations.
+- **Simulation & Verification**: Integrated simulation tools to preview toolpaths and check against stock geometry.
+- **Stock & Setup Definition**: Fast definition of raw material stock and machine coordinate setups.
+- **Custom Post-Processing**: Converts internal toolpaths into machine-ready G-code using customizable JSON post profiles.
+- **Multi-language Support**: Built-in internationalization framework for localized UI and messages.
 
-Toolpath Simulation:
+---
 
+## Installation
 
-Generated G-Code:
+### Manual Installation
+1. Locate your FreeCAD `Mod` directory:
+   - **Linux**: `~/.local/share/FreeCAD/Mod/`
+   - **Windows**: `%APPDATA%\FreeCAD\Mod\`
+   - **macOS**: `~/Library/Preferences/FreeCAD/Mod/`
+2. Clone or extract this repository's folder (named `LatheCAM`) inside your `Mod` directory.
+3. Restart FreeCAD. The **Lathe** workbench will appear in the workbench dropdown selector.
 
+---
 
-🛠️ Features & Tool Reference
+## Command Reference
 
-LatheCAM organizes the turning workflow logically, from machine setup to G-code generation. Below are the main tools available in the toolbar:
+| Icon | Tool | Module | Description |
+| :---: | :--- | :--- | :--- |
+| ![Setup](icons/lathe_setup.svg) | **Setup** | `LatheSetup.py` | Sets up job boundaries, safety clearances, and spindle speed limits. |
+| ![Stock](icons/lathe_stock.svg) | **Stock** | `LatheStock.py` | Defines raw stock dimensions, allowances, and material properties. |
+| ![Tool Manager](icons/Lathe_Tools.svg) | **Tool Manager** | `LatheToolManager.py` | Interface for creating and modifying cutting tools and inserts. |
+| ![Turret](icons/lathe_turret.svg) | **Turret** | `LatheTurret.py` | Assigns tools to specific turret slots for multi-step operations. |
+| ![Roughing](icons/lathe_roughing.svg) | **Roughing** | `LatheRoughing.py` | Executes rough turning cycles for rapid bulk material removal. |
+| ![Finishing](icons/lathe_finishing.svg) | **Finishing** | `LatheFinishing.py` | Performs final profile passes for precise dimensional tolerances. |
+| ![Grooving](icons/lathe_grooving.svg) | **Grooving** | `LatheGrooving.py` | Cuts internal, external, or face grooves. |
+| ![Parting](icons/lathe_parting.svg) | **Parting** | `LatheParting.py` | Specialized cut-off toolpath with feed reduction near the center line. |
+| ![Drilling](icons/lathe_drilling.svg) | **Drilling** | `LatheDrilling.py` | Manages axial drilling, pecking, and boring cycles. |
+| ![Threading](icons/lathe_threading.svg) | **Threading** | `LatheThreading.py` | Generates metric, imperial, or custom thread profiles. |
+| ![Simulation](icons/lathe_simulation.svg) | **Simulation** | `LatheSimulation.py` | Runs graphical simulation of toolpaths against stock geometry. |
+| ![PostProcess](icons/Lathe_PostProcess.svg) | **Post-Process** | `LathePostProcessor.py` | Exports operations to machine-ready G-code. |
 
-Setup & Configuration
+---
 
- Lathe Setup: Define your machine parameters, coordinate systems, and safety clearances (LatheSetup.py).
+## Project Structure
 
- Lathe Stock: Define the raw material dimensions (cylinder, tube, etc.) for accurate simulation and machining (LatheStock.py).
+The workbench uses a clean, modular structure following FreeCAD Addon standards:
 
- Lathe Part: Select the final target shape/body to be machined.
-
-Tool Management
-
- Tool Library: Open the Tool Manager GUI to create, edit, and manage turning inserts, holders, and drills (LatheToolManager.py).
-
- Turret Setup: Configure your Automatic Tool Changer (ATC) or turret stations (LatheTurret.py).
-
-Machining Operations
-
- Roughing: Generate roughing toolpaths for external and internal turning profiles (LatheRoughing.py).
-
- Finishing: Generate fine finishing passes to achieve the final part dimensions (LatheFinishing.py).
-
- Grooving: Create plunging toolpaths for external or internal grooves (LatheGrooving.py).
-
- Parting: Generate the cut-off operation to separate the finished part from the raw stock (LatheParting.py).
-
- Threading: Create constant or variable pitch threads (LatheThreading.py).
-
- Drilling: Generate axial drilling, pecking, and tapping cycles (LatheDrilling.py).
-
-Output & Verification
-
- Simulation: Run a visual check of the programmed toolpaths directly within the FreeCAD 3D view (LatheSimulation.py).
-
- Post-Process: Output the final NC/G-code file tailored for your specific CNC controller (LathePostProcessor.py).
-
-🌍 Multi-Language Support
-
-LatheCAM is designed to be accessible globally. It currently supports:
-
-🇬🇧 English
-
-🇮🇹 Italian
-
-🇪🇸 Spanish
-
-🇩🇪 German
-
-📥 Installation
-
-Manual Installation
-
-Download the repository as a ZIP file or clone it using Git:
-
-git clone https://github.com/yourusername/LatheCAM.git
-
-
-Place the LatheCAM folder into your FreeCAD Mod directory:
-
-Windows: %APPDATA%\FreeCAD\Mod\
-
-Linux: ~/.local/share/FreeCAD/Mod/ or ~/.FreeCAD/Mod/
-
-macOS: ~/Library/Application Support/FreeCAD/Mod/
-
-Restart FreeCAD. You should now see "LatheCAM" in the Workbench dropdown menu.
-
-📁 Directory Structure
-
-The workbench strictly follows FreeCAD's external workbench guidelines:
-
+```text
 LatheCAM/
-├── InitGui.py                  # FreeCAD Workbench initialization
-├── LatheATC.py                 # Automatic Tool Changer logic
-├── LatheCommands.py            # Core workbench commands registration
-├── LatheDrilling.py            # Drilling operation
-├── LatheFinishing.py           # Finishing operation
-├── LatheGrooving.py            # Grooving operation
-├── LatheI18n.py                # Internationalization handling
-├── LatheParting.py             # Parting operation
-├── LathePostProcessor.py       # G-Code generation logic
-├── LatheRoughing.py            # Roughing operation
-├── LatheSetup.py               # Job/Machine setup logic
-├── LatheSimulation.py          # Toolpath simulation
-├── LatheStock.py               # Stock definition
-├── LatheThreading.py           # Threading operation
-├── LatheToolManager.py         # Tool library management GUI
-├── LatheTurret.py              # Turret setup logic
-├── MachineLibrary/             # DB: machine configurations
-├── StockLibrary/               # DB: standard stock sizes
-├── ToolLibrary/                # DB: cutting tools
-├── TurretLibrary/              # DB: turret configurations
-├── icons/                      # SVG icons for the toolbar
-└── translations/               # Language dictionaries (.py files)
-
-
-📜 License
-
-This project is licensed under the terms of the GNU LGPL v2.1 (or compatible) license, matching FreeCAD's licensing model. See the LICENSE file for more details.
+├── icons/                   # SVG toolbar icons
+├── MachineLibrary/          # Machine definition profiles
+├── StockLibrary/            # Stock material profiles
+├── ToolLibrary/             # Tool and insert databases
+├── TurretLibrary/           # Turret configuration files
+├── translations/            # I18n localization files (EN, IT, ES, DE)
+├── post_profiles_ecam.json  # G-code post-processor configurations
+├── InitGui.py               # Workbench initialization for FreeCAD
+├── Lathe*.py                # Main operation modules
+├── README.md                # This documentation
+└── LICENSE                  # LGPL License file

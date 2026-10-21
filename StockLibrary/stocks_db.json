@@ -1,0 +1,40 @@
+{
+    "Cilindro Pieno 164 x 180": {
+        "StockName": "Cilindro Pieno 164 x 180",
+        "FormaGrezzo": "Cilindro Pieno",
+        "DiametroEsterno": 87.0,
+        "DiametroForoInterno": 0.0,
+        "LunghezzaTotale": 180.0,
+        "SovrametalloFrontaleZ": 4.0,
+        "SovrametalloRadialeX": 13.5,
+        "TrasparenzaGrezzo": 70,
+        "MostraMandrino": true,
+        "DiametroMandrino": 160.0,
+        "SpessoreMandrino": 60.0,
+        "LunghezzaPresaGriffe": 23.0,
+        "AltezzaGriffe": 36.0,
+        "MargineSicurezzaGriffe": 3.0,
+        "UsaContropunta": true,
+        "DiametroContropunta": 31.0,
+        "LunghezzaConoContropunta": 26.0
+    },
+    "Cilindro Pieno 84 x 115": {
+        "StockName": "Cilindro Pieno 84 x 115",
+        "FormaGrezzo": "Cilindro Pieno",
+        "DiametroEsterno": 80.0,
+        "DiametroForoInterno": 0.0,
+        "LunghezzaTotale": 115.0,
+        "SovrametalloFrontaleZ": 1.5,
+        "SovrametalloRadialeX": 2.0,
+        "TrasparenzaGrezzo": 55,
+        "MostraMandrino": true,
+        "DiametroMandrino": 160.0,
+        "SpessoreMandrino": 55.0,
+        "LunghezzaPresaGriffe": 20.0,
+        "AltezzaGriffe": 30.0,
+        "MargineSicurezzaGriffe": 3.0,
+        "UsaContropunta": false,
+        "DiametroContropunta": 30.0,
+        "LunghezzaConoContropunta": 25.0
+    }
+}

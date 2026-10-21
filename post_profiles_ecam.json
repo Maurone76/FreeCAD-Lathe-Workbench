@@ -1,0 +1,46 @@
+{
+  "Mach3 / Mach4 Turn (Tornio)": {
+    "decimals": 3,
+    "n_start": 10,
+    "n_step": 10,
+    "comm_style": 0,
+    "cool_on": "M08",
+    "cool_off": "M09",
+    "header": "(PROGRAMMA MACH3 TURN: {PROG} - {DOC} - {DATE})\nG21 G18 G40 G80 G90 {FEED_G}\nG54",
+    "tool_change": "M06 T{TOOL}{OFFSET} (UTENSILE: {TOOL_DESC})",
+    "footer": "G00 X{HOME_X} Z{HOME_Z}\nM05\nM30"
+  },
+  "Fanuc / Haas (ISO Standard)": {
+    "decimals": 3,
+    "n_start": 10,
+    "n_step": 10,
+    "comm_style": 0,
+    "cool_on": "M08",
+    "cool_off": "M09",
+    "header": "%\n{PROG} ({DOC} - {DATE})\nG21 G18 G40 G80 {FEED_G}\nG54\nG50 S{MAX_RPM}",
+    "tool_change": "G00 X{HOME_X} Z{HOME_Z}\nT{TOOL}{OFFSET} ({TOOL_DESC})",
+    "footer": "G00 X{HOME_X} Z{HOME_Z}\nM05\nM30\n%"
+  },
+  "Siemens Sinumerik (840D / 828D)": {
+    "decimals": 3,
+    "n_start": 10,
+    "n_step": 10,
+    "comm_style": 1,
+    "cool_on": "M08",
+    "cool_off": "M09",
+    "header": "; MPF {PROG} - {DOC} ({DATE})\nG710 G18 G90 G40 {FEED_G}\nG54\nLIMS={MAX_RPM}",
+    "tool_change": "G00 X{HOME_X} Z{HOME_Z}\nT{STATION} D1 ; {TOOL_DESC}",
+    "footer": "G00 X{HOME_X} Z{HOME_Z}\nM05\nM30"
+  },
+  "LinuxCNC (Tornio)": {
+    "decimals": 3,
+    "n_start": 10,
+    "n_step": 10,
+    "comm_style": 0,
+    "cool_on": "M08",
+    "cool_off": "M09",
+    "header": "(PROGRAMMA LINUXCNC: {PROG} - {DOC} - {DATE})\nG21 G18 {X_MODE_G} G90 G40 {FEED_G}\nG54",
+    "tool_change": "G00 X{HOME_X} Z{HOME_Z}\nT{STATION} M06 G43 ({TOOL_DESC})",
+    "footer": "G00 X{HOME_X} Z{HOME_Z}\nM05\nM30"
+  }
+}

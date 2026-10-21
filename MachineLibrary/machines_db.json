@@ -1,0 +1,18 @@
+{
+    "Tornio CNC Standard": {
+        "MachineName": "Tornio CNC Standard",
+        "SistemaCoordinate": "G54",
+        "DimensioneSimbolo": 30.0,
+        "MostraPianoSicurezza": true,
+        "SicurezzaX": 5.0,
+        "SicurezzaZ": 5.0,
+        "CambioUtensileX": 100.0,
+        "CambioUtensileZ": 100.0,
+        "ModoProgrammazioneX": "Diametrale (Diametro)",
+        "PosizioneTorretta": "Posteriore (+X)",
+        "GiriMaxMandrino": 2500,
+        "SensoRotazioneDefault": "Orario (M03)",
+        "RefrigeranteDefault": "Attivo (M08)",
+        "PostProcessor": "Fanuc"
+    }
+}

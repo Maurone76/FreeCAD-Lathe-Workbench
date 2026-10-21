@@ -1,0 +1,22 @@
+{
+    "Torretta Ottagonale 150": {
+        "TurretName": "Torretta Ottagonale 150",
+        "Modalita": "Parametrica",
+        "NumeroPosizioni": 8,
+        "Diametro": 150.0,
+        "Spessore": 40.0,
+        "LarghezzaIncavo": 12.0,
+        "ProfonditaIncavo": 12.0,
+        "DistX_WCS": 25.0,
+        "DistY_WCS": -6.0,
+        "DistZ_WCS": 25.0,
+        "SpecchiaX": false,
+        "SpecchiaY": false,
+        "RotX": 0.0,
+        "RotY": 0.0,
+        "RotZ": 0.0,
+        "StazioneAttiva": 1,
+        "UtensiliSaldati": "{\"Utensile_1\": {\"label\": \"Utensile 001\", \"rel_pos\": [-100.0, 6.000000000000012, 0.0], \"faccia_pt\": [-75.0, 9.184850993605149e-15, 6.0], \"faccia_norm\": [-1.0, 1.2246467991473532e-16, 0.0], \"sporgenza\": 28.0, \"tx\": 3.0, \"ty\": 6.0, \"tz\": -6.0, \"mx\": false, \"my\": false, \"rx\": 0.0, \"ry\": 0.0, \"rz\": 0.0}}",
+        "BrepFile": ""
+    }
+}

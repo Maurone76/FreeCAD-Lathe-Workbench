@@ -81,6 +81,8 @@ The workbench uses a clean, modular structure following FreeCAD Addon standards:
 
 This is a brand new software project in active development. If you encounter bugs, have suggestions, or want to propose improvements, please do not hesitate to share them! 
 
+*Please note: I develop this project in my free time and I am not at the computer every day. My response times may vary from very quick to a few days. Thank you for your patience!*
+
 To keep everything organized and avoid direct private messages, please use the following official channels:
 - Open an **[Issue](https://github.com/tuo-username/nome-tuo-repo/issues)** on GitHub for bug reports or specific errors.
 - Start or join a conversation in the **[GitHub Discussions](https://github.com/tuo-username/nome-tuo-repo/discussions)** section for ideas and general feedback.

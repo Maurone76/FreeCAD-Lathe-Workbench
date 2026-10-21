@@ -8,7 +8,7 @@
 ![Main Interface](docs/screenshot.png)
 *Figure 1: Lathe Workbench main interface and toolpaths.*
 
-https://github.com/tuo-username/nome-tuo-repo/raw/main/docs/Simulation.mp4
+https://github.com/tuo-username/nome-tuo-repo/raw/main/docs/simulation.mp4
 *Figure 2: Real-time 3D simulation of turning operations.*
 
 The **Lathe Workbench** is a specialized external CAM environment for [FreeCAD](https://www.freecad.org) built to handle complex CNC turning workflows. Unlike standard milling workbenches, this workbench is tailored specifically for lathe operations—including roughing, finishing, grooving, parting, drilling, threading, turret indexing, and custom G-code post-processing.
